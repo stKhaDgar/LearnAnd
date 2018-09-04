@@ -13,4 +13,10 @@ class LifeCycleActivity : AppCompatActivity() {
         tv_lifecycle.text = "onCreate()"
     }
 
+    override fun onStart() {
+        super.onStart()
+
+        tv_lifecycle.text = "onStart()"
+    }
+
 }
