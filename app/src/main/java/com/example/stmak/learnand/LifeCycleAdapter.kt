@@ -10,6 +10,7 @@ class LifeCycleAdapter(private val itemList: ArrayList<String>) : RecyclerView.A
 
     override fun onBindViewHolder(holder: LifeCycleAdapter.ViewHolder, position: Int) {
         holder.txt.text = itemList[position]
+        holder.txtPosition.text = "${position + 1}."
     }
 
     override fun getItemCount(): Int {
@@ -23,6 +24,7 @@ class LifeCycleAdapter(private val itemList: ArrayList<String>) : RecyclerView.A
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val txt = itemView.findViewById<TextView>(R.id.item_lifecycle)!!
+        val txtPosition = itemView.findViewById<TextView>(R.id.item_lifecycle_position)!!
     }
 
 
