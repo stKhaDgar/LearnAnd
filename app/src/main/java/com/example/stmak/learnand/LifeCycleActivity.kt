@@ -30,6 +30,12 @@ class LifeCycleActivity : AppCompatActivity() {
         updItemList("onResume()")
     }
 
+    override fun onPause() {
+        super.onPause()
+
+        updItemList("onPause()")
+    }
+
     private fun updItemList(txt: String){
         val df = SimpleDateFormat("HH:mm:ss")
         val date = df.format(Calendar.getInstance().time)
