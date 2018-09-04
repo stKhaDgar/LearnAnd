@@ -10,7 +10,7 @@
         android:id="@+id/bt_lifecycle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="1. Жизненный цикл приложения Android"
+        android:text="@string/text_bt_lifecycle"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
