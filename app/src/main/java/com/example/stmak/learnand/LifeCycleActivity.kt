@@ -19,4 +19,10 @@ class LifeCycleActivity : AppCompatActivity() {
         tv_lifecycle.text = "onStart()"
     }
 
+    override fun onResume() {
+        super.onResume()
+
+        tv_lifecycle.text = "onResume()"
+    }
+
 }
